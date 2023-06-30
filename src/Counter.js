@@ -11,7 +11,7 @@ export function Counter() {
   return (
     <CardActions>
       <div>
-        <IconButton color='primary' onClick={() => setLike(like + 1)} aria-label="delete">
+        <IconButton color='success' onClick={() => setLike(like + 1)} aria-label="delete">
           <Badge badgeContent={like} color="primary">
             👍</Badge></IconButton>
 
