@@ -29,13 +29,12 @@ return (
     <div className='movie-list-container'>
       {movieList.map((mv, index) => (
         <Movie key={mv.id} movies={mv} id={mv.id} 
-        deleteButton={
         
-        <IconButton className='delete-bu' color='error' onClick={()=>deleteMovie(mv.id)}> <DeleteIcon className='delete-bu' /></IconButton>} 
+        deleteButton={<IconButton className='delete-bu' color='error' 
+        onClick={()=>deleteMovie(mv.id)}> <DeleteIcon className='delete-bu' /></IconButton>} 
         
-        editButton={<IconButton color="secondary" onClick={()=>navigate(`/movies/edit/${mv.id}`)} aria-label="add an alarm">
-        <EditIcon/>
-      </IconButton>}
+        editButton={<IconButton color="secondary" 
+        onClick={()=>navigate(`/movies/edit/${mv.id}`)} aria-label="add an alarm"><EditIcon/></IconButton>}
         
         />
       ))}
