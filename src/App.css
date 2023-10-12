@@ -61,8 +61,6 @@ max-width: 900px;
 /* margin: 0 auto; */
 /* margin-top: 25px; */
 padding: 32px; 
-flex-wrap: wrap;
-display: flex;
 }
 
 .delete-bu {
@@ -72,4 +70,8 @@ justify-content: flex-end;
 }
 .low-but{
 display: flex;
+}
+.form-s{
+  display: flex;
+  flex-wrap: wrap;
 }

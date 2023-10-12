@@ -56,69 +56,70 @@ export function AddMovie() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="add-mve-con">
-      <TextField
-        name="name"
-        onChange={handleChange}
-        value={values.name}
-        error={touched.name && errors.name}
-        helperText={touched.name && errors.name ? errors.name : null}
-        onBlur={handleBlur}
-        label="Name"
-        variant="outlined"
-        type="text"
-      />
-      <TextField
-        name="poster"
-        onChange={handleChange}
-        value={values.poster}
-        error={touched.poster && errors.poster}
-        helperText={touched.poster && errors.poster ? errors.poster : null}
-        onBlur={handleBlur}
-        label="Poster"
-        variant="outlined"
-        type="text"
-      />
-      <TextField
-        name="rating"
-        onChange={handleChange}
-        value={values.rating}
-        error={touched.rating && errors.rating}
-        helperText={touched.rating && errors.rating ? errors.rating : null}
-        onBlur={handleBlur}
-        label="Rating"
-        variant="outlined"
-        type="text"
-      />
-      <TextField
-        name="summary"
-        onChange={handleChange}
-        value={values.summary}
-        error={touched.summary && errors.summary}
-        helperText={touched.summary && errors.summary ? errors.summary : null}
-        onBlur={handleBlur}
-        label="Summary"
-        variant="outlined"
-        type="text"
-      />
-      <TextField
-        name="trailer"
-        onChange={handleChange}
-        value={values.trailer}
-        error={touched.trailer && errors.trailer}
-        helperText={touched.trailer && errors.trailer ? errors.trailer : null}
-        onBlur={handleBlur}
-        label="Trailer"
-        variant="outlined"
-        type="text"
-      />
+    <div className="form-s">
+      <form onSubmit={handleSubmit} className="add-mve-con">
+        <TextField
+          name="name"
+          onChange={handleChange}
+          value={values.name}
+          error={touched.name && errors.name}
+          helperText={touched.name && errors.name ? errors.name : null}
+          onBlur={handleBlur}
+          label="Name"
+          variant="outlined"
+          type="text"
+        />
+        <TextField
+          name="poster"
+          onChange={handleChange}
+          value={values.poster}
+          error={touched.poster && errors.poster}
+          helperText={touched.poster && errors.poster ? errors.poster : null}
+          onBlur={handleBlur}
+          label="Poster"
+          variant="outlined"
+          type="text"
+        />
+        <TextField
+          name="rating"
+          onChange={handleChange}
+          value={values.rating}
+          error={touched.rating && errors.rating}
+          helperText={touched.rating && errors.rating ? errors.rating : null}
+          onBlur={handleBlur}
+          label="Rating"
+          variant="outlined"
+          type="text"
+        />
+        <TextField
+          name="summary"
+          onChange={handleChange}
+          value={values.summary}
+          error={touched.summary && errors.summary}
+          helperText={touched.summary && errors.summary ? errors.summary : null}
+          onBlur={handleBlur}
+          label="Summary"
+          variant="outlined"
+          type="text"
+        />
+        <TextField
+          name="trailer"
+          onChange={handleChange}
+          value={values.trailer}
+          error={touched.trailer && errors.trailer}
+          helperText={touched.trailer && errors.trailer ? errors.trailer : null}
+          onBlur={handleBlur}
+          label="Trailer"
+          variant="outlined"
+          type="text"
+        />
 
-      <Button variant="contained" type="submit">
-        {" "}
-        Add Movie
-      </Button>
+        <Button variant="contained" type="submit">
+          {" "}
+          Add Movie
+        </Button>
 
-      {/* <div>
+        {/* <div>
       values
       <pre>{JSON.stringify(values,null,2)}</pre>
       Error
@@ -126,6 +127,7 @@ export function AddMovie() {
       touched
       <pre>{JSON.stringify(touched,null,2)}</pre>
     </div> */}
-    </form>
+      </form>
+    </div>
   );
 }
