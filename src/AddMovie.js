@@ -44,7 +44,7 @@ export function AddMovie() {
 
   const navigate = useNavigate();
   const addMovie = (newMovie) => {
-    fetch("https://6496c59b83d4c69925a31739.mockapi.io/movies", {
+    fetch("https://backend-practice-xmbh.onrender.com/practice", {
       method: "POST",
       body: JSON.stringify(newMovie),
       headers: {

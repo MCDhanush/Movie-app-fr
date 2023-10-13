@@ -20,7 +20,7 @@ export function EditMovie() {
   const { id } = useParams();
   const [moviee, setMoviee] = useState(null);
   useEffect(() => {
-    fetch(`https://6496c59b83d4c69925a31739.mockapi.io/movies/${id}`)
+    fetch(`https://backend-practice-xmbh.onrender.com/practice/${id}`)
       .then((e) => e.json())
       .then((movie) => setMoviee(movie));
     // .then((e) => console.log(e.moviee))
@@ -48,7 +48,7 @@ function EditMovieForm({ moviee }) {
   const navigate = useNavigate();
 
   const editMovie = (updateMovie) => {
-    fetch(`https://6496c59b83d4c69925a31739.mockapi.io/movies/${moviee.id}`, {
+    fetch(`https://backend-practice-xmbh.onrender.com/practice/${moviee.id}`, {
       method: "PUT",
       body: JSON.stringify(updateMovie),
       headers: {

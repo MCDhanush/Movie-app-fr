@@ -42,7 +42,7 @@ function App() {
 
   const [movieList, setMovieList] = useState([]);
   useEffect(() => {
-    fetch("https://6496c59b83d4c69925a31739.mockapi.io/movies")
+    fetch("https://backend-practice-xmbh.onrender.com/practice")
       .then((e) => e.json())
       .then((movies) => setMovieList(movies));
   }, []);
